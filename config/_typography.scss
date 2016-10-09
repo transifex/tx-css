@@ -1,0 +1,122 @@
+/* =========================================
+		Typography
+   ========================================= */
+/**
+ * Prefix typography vars with $t_
+ */
+
+// Font family
+$t_ff_brand: "Gotham SSm A", "Gotham SSm B", sans-serif;
+
+// Font size
+$t_fs_base: 16px;
+
+// Line height
+$t_lh_base: 28px;
+
+// Font weight
+$t_fw_thin: 300;
+$t_fw_light: 300;
+$t_fw_book: 400;
+$t_fw_medium: 500;
+$t_fw_bold: 700;
+$t_fw_black: 800;
+
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+
+// Baseline
+$baselineGrid: 14px;
+$t_lh_base: rem($baselineGrid);
+
+
+/**
+ * Base typography
+ */
+$typi: (
+  null: (15px, $t_lh_base*2),
+  md: 16px
+);
+
+
+/**
+ * Headings
+ */
+$t_heading-large : (
+  null: (36px, $t_lh_base*3),
+  xs: (42px, $t_lh_base*4),
+  md: 52px
+);
+
+$t_heading-big : (
+  null: (32px, $t_lh_base*3),
+  xs: (36px, $t_lh_base*4),
+  md: 42px
+);
+
+$t_heading-medium : (
+  null: (24px, $t_lh_base*3),
+  xs: 30px,
+  md: 34px
+);
+
+$t_heading-regular : (
+  null: (24px, $t_lh_base*3),
+  xs: 30px,
+  md: 32px
+);
+
+$t_heading-regular-medium : (
+  null: (20px, $t_lh_base*3),
+  xs: 26px
+);
+
+$t_heading-small : (
+  null: (18px, $t_lh_base*2),
+  xs: (24px, $t_lh_base*3)
+);
+
+$t_heading-smaller : (
+  null: (16px, $t_lh_base*2),
+  xs: (22px, $t_lh_base*3)
+);
+
+
+
+/**
+ * Texts
+ */
+$t_text-xsmall : (
+  null: (10px, $t_lh_base)
+);
+
+$t_text-smaller : (
+  null: (12px, 1.5)
+);
+
+$t_text-small : (
+  null: (14px, 1.7)
+);
+
+$t_text-regular : (
+  null: (15px, 1.7),
+  md: 16px
+);
+
+$t_text-medium : (
+  null: (17px, 1.7),
+  md: 18px
+);
+
+$t_text-large : (
+  null: (19px, 1.7),
+  md: 20px
+);
+
+// Misc
+$t_text-footer : (
+  null: (13px, 1.5)
+);

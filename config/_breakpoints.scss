@@ -1,0 +1,44 @@
+/* =========================================
+		Breakpoints
+   ========================================= */
+
+$b_xs: 400px;
+$b_sm: 600px;
+$b_md: 800px;
+$b_lg: 1024px;
+$b_xl: 1200px;
+
+
+/**
+ * Breakpoints map used
+ * with bp() mixin.
+ */
+$b_list : (
+  xs   : "screen and (max-width: $b_xs)",
+  xso  : "screen and (min-width: $b_xs + 1)",
+  smu  : "screen and (max-width: $b_sm)",
+  sm   : "screen and (min-width: $b_xs + 1) and (max-width: $b_sm)",
+  smo  : "screen and (min-width: $b_sm + 1)",
+  mdu  : "screen and (max-width: $b_md)",
+  md   : "screen and (min-width: $b_sm + 1) and (max-width: $b_md)",
+  mdo  : "screen and (min-width: $b_md + 1)",
+  lgu  : "screen and (max-width: $b_lg)",
+  lg   : "screen and (min-width: $b_md + 1) and (max-width: $b_lg)",
+  lgo  : "screen and (min-width: $b_lg + 1)",
+  xlu  : "screen and (max-width: $b_xl)",
+  xl   : "screen and (min-width: $b_lg + 1) and (max-width: $b_xl)",
+  xlo  : "screen and (min-width: $b_xl + 1)"
+);
+
+/**
+ * Typi breakpoints map
+ * used for typography.
+ *
+ */
+$breakpoints : (
+  xs: $b_xs,
+  sm: $b_sm,
+  md: $b_md,
+  lg: $b_lg,
+  xl: $b_xl
+)

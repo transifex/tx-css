@@ -1,0 +1,12 @@
+/* =========================================
+		Z-indexes
+   ========================================= */
+/**
+ * Prefix z-index with $z_
+ */
+
+$z_fixedHeader: 9002;
+$z_stickyNav: 9001;
+$z_header: 9000;
+$z_hero: 1;
+$z_hero-overlay: -1;

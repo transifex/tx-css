@@ -1,0 +1,42 @@
+/* =========================================
+		Color Index
+   ========================================= */
+/**
+ * Prefix colors with $c_
+ */
+
+$c_white_medium: #F7F7F7;
+
+$c_gray: #818791;
+$c_gray_light: #E3E3E3;
+$c_gray_medium: #525963;
+$c_gray_dark: #20252C;
+
+$c_primary_dark: #223657;
+$c_primary: #0064AB;
+$c_primary_light: #65D2EA;
+
+$c_black: $c_gray_dark;
+$c_dark: $c_gray_dark;
+$c_white: #fff;
+
+$c_emerald: #5BD5C5;
+
+$c_blue_light: #0092F9;
+$c_blue_pale: #84CCFF;
+
+$c_error: #FE5D65;
+$c_success: #18C125;
+$c_warning: #FCB93B;
+$c_info: #0086E6;
+
+
+/* =========================================
+		Colors Applied
+   ========================================= */
+/**
+ * Prefix applied colors with $ca_
+ */
+$ca_error: $c_error;
+
+$ca_input-border: #C7CED3;
