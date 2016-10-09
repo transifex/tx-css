@@ -1,0 +1,18 @@
+.o-input,
+%o-input {
+  color: $c_gray_medium;
+  font-family: $t_ff_brand;
+  font-weight: $t_fw_book;
+  transition: border-color 0.25s;
+  border: 1px solid $ca_input-border;
+
+  &:focus {
+    border-color: darken($ca_input-border, 20%);
+  }
+  
+  &.parsley-error,
+  &.is-invalid {
+    border-color: $c_error;
+  }
+
+}

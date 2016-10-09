@@ -1,0 +1,42 @@
+.o-container {
+  padding-right: $g_gutterWidth/2;
+  padding-left: $g_gutterWidth/2;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  
+  @include breakpoint($b_xs) {
+    padding-right: 40px; //TODO: Creat var named outterMargin
+    padding-left: 40px;
+  }
+  
+  @include breakpoint($b_lg) {
+    width: $g_containerWidth-small + $g_gutterWidth;
+  }
+
+  @include breakpoint($b_xl) {
+    width: $g_containerWidth + $g_gutterWidth;
+  }
+  
+  &--half {
+    box-sizing: border-box;
+    
+    @include breakpoint($b_lg) {
+      width: $g_containerWidth-small/2;
+    }
+  
+    @include breakpoint($b_xl) {
+      width: $g_containerWidth/2;
+    }
+      
+  }
+
+}
+
+.o-containerFluid {
+  padding-right: $g_gutterWidth/2;
+  padding-left: $g_gutterWidth/2;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}

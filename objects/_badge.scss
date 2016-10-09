@@ -1,0 +1,32 @@
+.o-badge {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: $c_white;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: $t_fw_book;
+  border-radius: 4px;
+  background: $c_primary;
+  letter-spacing: 2px;
+  
+  &--transparent {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  &--black {
+    background: #000;
+  }
+  
+  &--small {
+    font-size: 11px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  
+}

@@ -1,0 +1,33 @@
+.o-heading-large,
+%o-heading-large {
+  @include typi($t_heading-large);
+}
+
+.o-heading-big {
+  @include typi($t_heading-big);
+}
+
+.o-heading-medium,
+%o-heading-medium {
+  @include typi($t_heading-medium);
+}
+
+.o-heading,
+%o-heading {
+  @include typi($t_heading-regular);
+}
+
+.o-heading-regular-medium,
+%o-heading-regular-medium {
+  @include typi($t_heading-regular-medium);
+}
+
+.o-heading-small,
+%o-heading-small {
+  @include typi($t_heading-small);
+}
+
+.o-heading-smaller,
+%o-heading-smaller {
+  @include typi($t_heading-smaller);
+}

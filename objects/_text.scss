@@ -1,0 +1,34 @@
+.o-text-xsmall,
+%o-text-xsmall {
+  @include typi($t_text-xsmall);
+}
+
+.o-text-footer,
+%o-text-footer {
+  @include typi($t_text-footer);
+}
+
+.o-text-smaller,
+%o-text-smaller {
+  @include typi($t_text-smaller);
+}
+
+.o-text-small,
+%o-text-small {
+  @include typi($t_text-small);
+}
+
+.o-text-regular,
+%o-text-regular {
+  @include typi($t_text-regular);
+}
+
+.o-text-medium,
+%o-text-medium {
+  @include typi($t_text-medium);
+}
+
+.o-text-large,
+%o-text-large {
+  @include typi($t_text-large);
+}

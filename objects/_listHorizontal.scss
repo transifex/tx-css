@@ -1,0 +1,22 @@
+.o-listHorizontal,
+%o-listHorizontal{
+  list-style: none;
+  
+  &__item {
+    display: inline-block;
+    margin-right: 15px;
+    
+    &:last-child { margin-right: 0 };
+  }
+  
+  &--wide {
+    
+    .o-listHorizontal__item {
+      margin-right: 25px;
+      
+      &:last-child { margin-right: 0 };
+    }
+    
+  }
+  
+}

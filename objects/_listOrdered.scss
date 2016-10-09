@@ -1,0 +1,30 @@
+.o-listOrdered {
+  
+  li {
+    list-style-type: none;
+    counter-increment: item;
+    position: relative;
+    padding-left: 55px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      float: left;
+      text-align: center;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      vertical-align: middle;
+      color: $c_primary;
+      border: 1px solid $c_primary;
+      border-radius: 50%;
+      font-weight: $t_fw_book;
+      font-family: inherit;
+      content: counter(item);
+    }
+
+  }
+  
+}

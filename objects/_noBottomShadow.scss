@@ -1,0 +1,23 @@
+.o-noBottomShadow {
+  // Hide the bottom shadow
+  overflow-y: hidden;
+  // Add padding to show the top shadow
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  &__img {
+    // box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 34px 0px rgba(0,0,0,0.50);
+    
+    .o-noBottomShadow--light & {
+      box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.08);
+    }
+    
+    .o-noBottomShadow--medium & {
+      box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
+    }
+
+  }
+
+}

@@ -1,0 +1,29 @@
+.o-playButton {
+  display: inline-block;
+  background: $c_primary;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  line-height: 82px;
+  text-align: center;
+  cursor: pointer;
+  
+  &:hover {
+    background: darken($c_primary, 4%);
+  }
+  
+  &:active {
+    background: darken($c_primary, 8%);
+  }
+
+  &__arrow {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0; 
+  	height: 0; 
+  	border-top: 10px solid transparent;
+  	border-bottom: 10px solid transparent;
+  	border-left: 16px solid $c_white;
+  }
+
+}

@@ -1,0 +1,47 @@
+.o-media {
+  display: flex;
+  align-items: flex-start;
+  
+  &__body {
+    flex-shrink: 1;
+    flex: 1 1 0%
+  }
+  
+  &__img {
+    flex-shrink: 1;
+    margin-right: 10px;
+  }
+  
+}
+
+/**
+ * Modifier: Middle
+ */
+ 
+.o-media--middle {
+  align-items: center;
+}
+
+/**
+ * Modifier: Gutter
+ */
+ 
+.o-media--gutter {
+
+  .o-media__img {
+    margin-right: $g_gutterWidth;
+  }
+
+}
+
+/**
+ * Modifier: Gutter Half
+ */
+ 
+.o-media--gutterHalf {
+
+  .o-media__img {
+    margin-right: $g_gutterWidth / 2;
+  }
+
+}

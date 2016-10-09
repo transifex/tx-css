@@ -1,0 +1,53 @@
+.o-listStyled {
+  
+  &-item {
+    padding-left: 55px;
+    background-image: url("../svg/list-icon-check.svg");
+    min-height: 36px;
+    background-size: 36px 36px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-bottom: $baselineGrid;
+    
+    &--blackPlusIcon {
+      background-image: url("../svg/list-icon-plus-black.svg");
+    }
+    
+    &--primaryPlusIcon {
+      background-image: url("../svg/list-icon-plus-primary.svg");
+    }
+    
+    &--checkIcon {
+      padding-left: 25px;
+      background-image: url("../img/list-blue-small-arrow.png");
+      background-size: 10px 7px;
+      padding-bottom: 0;
+      margin-bottom: $baselineGrid;
+      min-height: auto;
+      background-position: left 10px;
+    }
+
+  }
+  
+  &--unordered {
+    
+    .o-listStyled-item {
+      position: relative;
+      padding-left: 20px;
+      list-style-type: none;
+      background-image: none;
+      min-height: auto;
+  
+      &:before {
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        font-weight: $t_fw_medium;
+        content: "•";
+      }
+      
+    }
+    
+  }
+  
+}

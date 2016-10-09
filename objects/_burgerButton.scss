@@ -1,0 +1,75 @@
+.o-burgerButton {
+  $color: $c_white;
+  $width: 24px;
+  $height: 2px;
+  $margin: 7px;
+  
+  display: inline-block;
+  height: $height*3 + $margin*2;
+  
+  &.is-hidden {
+    display: none;
+  }
+  
+  span {
+    position: relative;
+    display: block;
+    width: $width;
+    height: $height;
+    background: $color;
+    transition: all .2s ease-in-out;
+    margin-top: $height + $margin;
+    
+    &:before, &:after {
+      position: absolute;
+      background: $color;
+      content: '';
+      width: $width;
+      height: $height;
+      transition: all .2s ease-in-out;
+      right: 0;
+    }
+    
+    &:before {
+      top: -($margin + $height);
+    }
+    
+    &:after {
+      top: $margin + $height;
+    }
+    
+  }
+  
+  &.is-active {
+    
+    span {
+      background: transparent;
+      
+      &:before {
+        transform: rotate(45deg) translate(8px, 7px);
+      }
+      
+      &:after {
+        transform: rotate(-45deg) translate(6px, -5px);
+      }
+    
+    }
+    
+  }
+  
+}
+
+
+.o-burgerButton--dark {
+  
+  span {
+    background: $c_gray;
+    
+    &:before,
+    &:after {
+      background: $c_gray;
+    }
+    
+  }
+  
+}

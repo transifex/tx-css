@@ -1,0 +1,22 @@
+/*
+ * For: en-US
+ */
+html[lang="en"] {
+  .o-langShow-en {
+    display: block;
+  }
+  
+  .o-langHide-en {
+    display: none;
+  }
+}
+
+html:not([lang="en"]) {
+  .o-langShow-en {
+    display: none;
+  }
+  
+  .o-langHide-en {
+    display: block;
+  }
+}
