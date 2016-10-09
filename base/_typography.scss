@@ -1,0 +1,29 @@
+html {
+  font-family: $t_ff_brand;
+  color: $c_gray;
+  font-style: normal;
+  font-weight: $t_fw_book;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  @include typi-base();
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+	font-weight: $t_fw_medium;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: $t_fw_book;
+}
