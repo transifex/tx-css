@@ -1,0 +1,113 @@
+/*
+ * SVG fill
+ */
+.u-fill-gray {
+  fill: $c_gray !important;
+}
+
+.u-fill-white {
+  fill: $c_white !important;
+}
+
+
+/*
+ * Text color
+ */
+.u-color-grayLight {
+  color: $c_white_medium !important;
+}
+
+.u-color-gray {
+  color: $c_gray !important;
+}
+
+.u-color-white {
+  color: $c_white !important;
+}
+
+.u-color-grayMedium {
+  color: $c_gray_medium !important;
+}
+
+.u-color-black,
+%u-color-black {
+  color: $c_black !important;
+}
+
+.u-color-dark {
+  color: $c_dark !important;
+} 
+
+.u-color-primary {
+  color: $c_primary !important;
+}
+
+
+/*
+ * Background color
+ */
+.u-bgColor-gray {
+  background-color: #DBDBDB !important;
+}
+
+.u-bgColor-grayLight {
+  background-color: #f7f7f7 !important;
+}
+
+.u-bgColor-white {
+  background-color: $c_white !important;
+}
+
+ 
+/*
+ * Border color
+ */
+.u-border-grayLight {
+  border: 1px solid $c_gray_light !important;
+}
+.u-borderBottom-grayLight {
+  border-bottom: 1px solid $c_gray_light !important;
+}
+.u-borderTop-grayLight {
+  border-top: 1px solid $c_gray_light !important;
+}
+.u-borderLeft-grayLight {
+  border-left: 1px solid $c_gray_light !important;
+}
+.u-borderRight-grayLight {
+  border-right: 1px solid $c_gray_light !important;
+  &\@mdo {
+    @include bp(mdo) { border-right: 1px solid $c_gray_light !important; }
+  }
+}
+.u-border-gray {
+  border: 1px solid #E3E3E3 !important;
+}
+.u-borderBottom-gray {
+  border-bottom: 1px solid #E3E3E3 !important;
+}
+.u-borderTop-semiTransparent {
+  border-top: 1px solid rgba(255,255,255,0.2) !important;
+}
+.u-borderRight-semiTransparent {
+  border-right: 1px solid rgba(255,255,255,0.2) !important;
+}
+.u-borderLeft-semiTransparent {
+  border-left: 1px solid rgba(255,255,255,0.2) !important;
+}
+.u-borderBottom-semiTransparent {
+  border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+  &\@smu {
+    @include bp(smu) { border-bottom: 1px solid rgba(255,255,255,0.2) !important; }
+  }
+}
+.u-border-white-wide {
+  border: 2px solid $c_white !important;
+}
+
+/*
+ * Box shadow
+ */
+.u-boxShadow-screenshot {
+  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.08);
+}

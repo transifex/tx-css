@@ -1,0 +1,46 @@
+.u-width-90 {
+  width: 90% !important;
+  
+  &\@mdo {
+    @include bp(mdo) { width: 90% !important; }
+  }
+}
+
+.u-width-half {
+  width: 50% !important;
+}
+
+.u-width-full {
+  width: 100% !important;
+  &\@smu {
+    @include bp(smu) { width: 100% !important; }
+  }
+}
+
+.u-width-containerHalf {
+  
+  @include breakpoint($b_lg) {
+    width: $g_containerWidth-small/2;
+  }
+
+  @include breakpoint($b_xl) {
+    width: $g_containerWidth/2;
+  }
+    
+}
+
+.u-maxWidth-full {
+  max-width: 100% !important;
+  &\@mdu {
+    @include bp(mdu) { max-width: 100% !important; }
+  }
+}
+
+.u-marHorizontal-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.u-height-auto {
+  height: auto !important;
+}

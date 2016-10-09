@@ -1,0 +1,69 @@
+ /*
+ * Floats
+ */
+.u-float-right {
+  float: right !important;
+}
+.u-float-left {
+  float: left !important;
+}
+
+
+/*
+ * Text align
+ */
+.u-textAlign-center,
+%u-textAlign-center {
+  text-align: center !important;
+}
+
+.u-textAlign-left {
+  text-align: left !important;
+}
+.u-textAlign-right {
+  text-align: right !important;
+}
+
+
+/*
+ * Position
+ */
+.u-position-relative {
+  position: relative !important;
+}
+.u-position-absolute {
+  position: absolute !important;
+}
+.u-position-bottom {
+  bottom: 0 !important;
+}
+
+@each $name, $size in $b_list {
+
+  @media #{$size} {
+
+    /*
+     * Floats
+     */
+    .u-float-right\@#{$name} {
+      float: right !important;
+    }
+    
+    
+    /*
+     * Text align
+     */
+    .u-textAlign-center\@#{$name} {
+      text-align: center !important;
+    }
+    
+    .u-textAlign-left\@#{$name} {
+      text-align: left !important;
+    }
+    .u-textAlign-right\@#{$name} {
+      text-align: right !important;
+    }
+    
+  }
+  
+}

@@ -1,0 +1,86 @@
+/**
+ * Margin utility classes.
+ *
+ */
+
+$margin-extra: (
+  '-none': 0,
+  '-x2': $t_lh_base*2,
+  '-x3': $t_lh_base*3,
+  '-x4': $t_lh_base*4,
+  '-x5': $t_lh_base*5,
+  '-x6': $t_lh_base*6,
+  '-x7': $t_lh_base*7,
+  '-x8': $t_lh_base*8,
+  '-x9': $t_lh_base*9,
+  '-x10': $t_lh_base*10,
+  '-x11': $t_lh_base*11,
+  '-x12': $t_lh_base*12,
+  '-x13': $t_lh_base*13,
+  '-x14': $t_lh_base*14,
+  '-x22': $t_lh_base*22,
+  '-gutterHalf': $g_gutterWidth/2,
+  '-gutter': $g_gutterWidth
+);
+
+
+.u-marRight-small { margin-right: 11px !important; }
+.u-marBottom-half { margin-bottom: $t_lh_base/2 !important; }
+.u-marRight-icon { margin-right: 20px !important; }
+.u-marRight-gutterx2 { margin-right: $g_gutterWidth*2; }
+
+.u-mar   { margin        : $t_lh_base !important; }
+.u-marTop  { margin-top    : $t_lh_base !important; }
+.u-marRight  { margin-right  : $t_lh_base !important; }
+.u-marBottom  { margin-bottom : $t_lh_base !important; }
+.u-marLeft  { margin-left   : $t_lh_base !important; }
+.u-marVertical  { margin-top    : $t_lh_base !important; margin-bottom : $t_lh_base !important; }
+.u-marHorizontal  { margin-right  : $t_lh_base !important; margin-left   : $t_lh_base !important; }
+
+
+
+
+@each $marginName, $marginSize in $margin-extra {
+
+  .u-mar#{$marginName}   { margin        : $marginSize !important; }
+  .u-marTop#{$marginName}  { margin-top    : $marginSize !important; }
+  .u-marRight#{$marginName}  { margin-right  : $marginSize !important; }
+  .u-marBottom#{$marginName}  { margin-bottom : $marginSize !important; }
+  .u-marLeft#{$marginName}  { margin-left   : $marginSize !important; }
+  .u-marVertical#{$marginName}  { margin-top    : $marginSize !important; margin-bottom : $marginSize !important; }
+  .u-marHorizontal#{$marginName}  { margin-right  : $marginSize !important; margin-left   : $marginSize !important; }
+
+}
+
+
+
+
+// Responsive Text Utilities
+  
+@each $breakpointName, $b_listize in $b_list {
+  
+  @media #{$b_listize} {
+   
+    .u-mar\@#{$breakpointName}   { margin        : $t_lh_base !important; }
+    .u-marTop\@#{$breakpointName}  { margin-top    : $t_lh_base !important; }
+    .u-marRight\@#{$breakpointName}  { margin-right  : $t_lh_base !important; }
+    .u-marBottom\@#{$breakpointName}  { margin-bottom : $t_lh_base !important; }
+    .u-marLeft\@#{$breakpointName}  { margin-left   : $t_lh_base !important; }
+    .u-marVertical\@#{$breakpointName}  { margin-top    : $t_lh_base !important; margin-bottom : $t_lh_base !important; }
+    .u-marHorizontal\@#{$breakpointName}  { margin-right  : $t_lh_base !important; margin-left   : $t_lh_base !important; } 
+    
+    @each $marginName, $marginSize in $margin-extra {
+
+      .u-mar#{$marginName}\@#{$breakpointName}   { margin        : $marginSize !important; }
+      .u-marTop#{$marginName}\@#{$breakpointName}  { margin-top    : $marginSize !important; }
+      .u-marRight#{$marginName}\@#{$breakpointName}  { margin-right  : $marginSize !important; }
+      .u-marBottom#{$marginName}\@#{$breakpointName}  { margin-bottom : $marginSize !important; }
+      .u-marLeft#{$marginName}\@#{$breakpointName}  { margin-left   : $marginSize !important; }
+      .u-marVertical#{$marginName}\@#{$breakpointName}  { margin-top    : $marginSize !important; margin-bottom : $marginSize !important; }
+      .u-marHorizontal#{$marginName}\@#{$breakpointName}  { margin-right  : $marginSize !important; margin-left   : $marginSize !important; }
+
+    }
+    
+  }
+  
+}

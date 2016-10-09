@@ -1,0 +1,81 @@
+/**
+ * Padding utility classes.
+ *
+ */
+
+$padding-extra: (
+  '-none': 0,
+  '-x2': $t_lh_base*2,
+  '-x3': $t_lh_base*3,
+  '-x4': $t_lh_base*4,
+  '-x5': $t_lh_base*5,
+  '-x6': $t_lh_base*6,
+  '-x7': $t_lh_base*7,
+  '-x8': $t_lh_base*8,
+  '-x9': $t_lh_base*9,
+  '-x10': $t_lh_base*10,
+  '-x11': $t_lh_base*11,
+  '-x12': $t_lh_base*12,
+  '-x13': $t_lh_base*13,
+  '-x14': $t_lh_base*14,
+  '-gutter': $g_gutterWidth
+);
+
+
+.u-padBottom-x22 { padding-bottom: $t_lh_base*22 !important; }
+
+.u-pad   { padding        : $t_lh_base !important; }
+.u-padTop  { padding-top    : $t_lh_base !important; }
+.u-padRight  { padding-right  : $t_lh_base !important; }
+.u-padBottom  { padding-bottom : $t_lh_base !important; }
+.u-padLeft  { padding-left   : $t_lh_base !important; }
+.u-padVertical  { padding-top    : $t_lh_base !important; padding-bottom : $t_lh_base !important; }
+.u-padHorizontal  { padding-right  : $t_lh_base !important; padding-left   : $t_lh_base !important; }
+
+
+
+
+@each $paddingName, $paddingSize in $padding-extra {
+
+  .u-pad#{$paddingName}   { padding        : $paddingSize !important; }
+  .u-padTop#{$paddingName}  { padding-top    : $paddingSize !important; }
+  .u-padRight#{$paddingName}  { padding-right  : $paddingSize !important; }
+  .u-padBottom#{$paddingName}  { padding-bottom : $paddingSize !important; }
+  .u-padLeft#{$paddingName}  { padding-left   : $paddingSize !important; }
+  .u-padVertical#{$paddingName}  { padding-top    : $paddingSize !important; padding-bottom : $paddingSize !important; }
+  .u-padHorizontal#{$paddingName}  { padding-right  : $paddingSize !important; padding-left   : $paddingSize !important; }
+
+}
+
+
+
+
+// Responsive Text Utilities
+  
+@each $breakpointName, $b_listize in $b_list {
+  
+  @media #{$b_listize} {
+   
+    .u-pad\@#{$breakpointName}   { padding        : $t_lh_base !important; }
+    .u-padTop\@#{$breakpointName}  { padding-top    : $t_lh_base !important; }
+    .u-padRight\@#{$breakpointName}  { padding-right  : $t_lh_base !important; }
+    .u-padBottom\@#{$breakpointName}  { padding-bottom : $t_lh_base !important; }
+    .u-padLeft\@#{$breakpointName}  { padding-left   : $t_lh_base !important; }
+    .u-padVertical\@#{$breakpointName}  { padding-top    : $t_lh_base !important; padding-bottom : $t_lh_base !important; }
+    .u-padHorizontal\@#{$breakpointName}  { padding-right  : $t_lh_base !important; padding-left   : $t_lh_base !important; } 
+    
+    @each $paddingName, $paddingSize in $padding-extra {
+
+      .u-pad#{$paddingName}\@#{$breakpointName}   { padding        : $paddingSize !important; }
+      .u-padTop#{$paddingName}\@#{$breakpointName}  { padding-top    : $paddingSize !important; }
+      .u-padRight#{$paddingName}\@#{$breakpointName}  { padding-right  : $paddingSize !important; }
+      .u-padBottom#{$paddingName}\@#{$breakpointName}  { padding-bottom : $paddingSize !important; }
+      .u-padLeft#{$paddingName}\@#{$breakpointName}  { padding-left   : $paddingSize !important; }
+      .u-padVertical#{$paddingName}\@#{$breakpointName}  { padding-top    : $paddingSize !important; padding-bottom : $paddingSize !important; }
+      .u-padHorizontal#{$paddingName}\@#{$breakpointName}  { padding-right  : $paddingSize !important; padding-left   : $paddingSize !important; }
+
+    }
+    
+  }
+  
+}

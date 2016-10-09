@@ -1,0 +1,90 @@
+/*
+ * Font weight
+ */
+.u-fontWeight-thin,
+%u-fontWeight-thin {
+  font-weight: $t_fw_thin !important;
+}
+
+.u-fontWeight-light,
+%u-fontWeight-light {
+  font-weight: $t_fw_light !important;
+}
+
+.u-fontWeight-book,
+%u-fontWeight-book {
+  font-weight: $t_fw_book !important;
+}
+
+.u-fontWeight-medium,
+%u-fontWeight-medium {
+  font-weight: $t_fw_medium !important;
+}
+
+.u-fontWeight-bold,
+%u-fontWeight-bold {
+  font-weight: $t_fw_bold !important;
+}
+
+
+
+/*
+ * Vertical align
+ */
+.u-verticalAlign-top {
+  vertical-align: top !important;
+}
+
+.u-verticalAlign-bottom {
+  vertical-align: bottom !important;
+}
+
+.u-verticalAlign-textBottom {
+  vertical-align: text-bottom !important;
+}
+
+.u-verticalAlign-middle {
+  vertical-align: middle !important;
+}
+
+
+
+/*
+ * Letter spacing
+ */
+.u-letterSpacing-1 {
+  letter-spacing: 1px !important;
+}
+.u-letterSpacing-2 {
+  letter-spacing: 2px !important;
+}
+
+
+
+/*
+ * White space
+ */
+.u-whiteSpace-nowrap {
+  white-space: nowrap !important;
+}
+
+
+
+/*
+ * Text Transform
+ */
+.u-textTransform-upperCase {
+  text-transform: uppercase !important;
+}
+.u-textTransform-capitalize {
+  text-transform: capitalize !important;
+}
+
+
+
+/*
+ * Font style
+ */
+.u-fontStyle-italic {
+  font-style: italic;
+}
