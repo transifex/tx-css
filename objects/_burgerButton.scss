@@ -4,6 +4,13 @@
   $height: 2px;
   $margin: 7px;
   
+  // Reset button element
+  appearance: none;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  
   display: inline-block;
   height: $height*3 + $margin*2;
   
