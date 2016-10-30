@@ -13,7 +13,7 @@
   border-style: solid;
   padding-left: 38px;
   padding-right: 38px;
-  border-box: box-sizing;
+  box-sizing: border-box;
   text-align: center;
   cursor: pointer;
   font-family: $t_ff_brand;
@@ -21,6 +21,8 @@
   min-width: auto;
   max-width: none;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @include breakpoint($b_sm) {
     line-height: $baselineGrid*2;
