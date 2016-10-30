@@ -1,10 +1,11 @@
 .o-listHorizontal,
-%o-listHorizontal{
+%o-listHorizontal {
   list-style: none;
 }
 
 
-.o-listHorizontal__item {
+.o-listHorizontal__item,
+%o-listHorizontal__item {
   display: inline-block;
   margin-right: 15px;
   vertical-align: middle;
