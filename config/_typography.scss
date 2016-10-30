@@ -71,17 +71,20 @@ $t_heading-regular : (
 
 $t_heading-regular-medium : (
   null: (20px, $t_lh_base*3),
-  xs: 26px
+  xs: 26px,
+  md: 26px
 );
 
 $t_heading-small : (
   null: (18px, $t_lh_base*2),
-  xs: (24px, $t_lh_base*3)
+  xs: (24px, $t_lh_base*3),
+  md: 24px
 );
 
 $t_heading-smaller : (
   null: (16px, $t_lh_base*2),
-  xs: (22px, $t_lh_base*3)
+  xs: (22px, $t_lh_base*3),
+  md: 22px
 );
 
 
@@ -90,15 +93,18 @@ $t_heading-smaller : (
  * Texts
  */
 $t_text-xsmall : (
-  null: (10px, $t_lh_base)
+  null: (10px, $t_lh_base),
+  md: 10px
 );
 
 $t_text-smaller : (
-  null: (12px, 1.5)
+  null: (12px, 1.5),
+  md: 12px
 );
 
 $t_text-small : (
-  null: (14px, 1.7)
+  null: (14px, 1.7),
+  md: 14px
 );
 
 $t_text-regular : (
@@ -118,5 +124,6 @@ $t_text-large : (
 
 // Misc
 $t_text-footer : (
-  null: (13px, 1.5)
+  null: (13px, 1.5),
+  md: 13px
 );
