@@ -18,7 +18,8 @@ $padding-extra: (
   '-x12': $t_lh_base*12,
   '-x13': $t_lh_base*13,
   '-x14': $t_lh_base*14,
-  '-gutter': $g_gutterWidth
+  '-gutter': $g_gutterWidth,
+  '-gutterHalf': $g_gutterWidth/2,
 );
 
 
