@@ -2,7 +2,7 @@
   $color: $c_white;
   $width: 24px;
   $height: 2px;
-  $margin: 7px;
+  $margin: 7px + $height;
   
   // Reset button element
   appearance: none;
@@ -26,7 +26,8 @@
     height: $height;
     background: $color;
     transition: all .2s ease-in-out;
-    margin-top: $height + $margin;
+    margin-top: $margin;
+    margin-bottom: $margin;
     
     &:before, &:after {
       position: absolute;
@@ -39,11 +40,11 @@
     }
     
     &:before {
-      top: -($margin + $height);
+      top: -$margin;
     }
     
     &:after {
-      top: $margin + $height;
+      top: $margin;
     }
     
   }
