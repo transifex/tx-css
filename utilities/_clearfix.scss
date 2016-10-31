@@ -4,7 +4,8 @@
  * over and over in your markup.
  */
 .clearfix,
-%clearfix {
+%clearfix,
+.u-clearfix {
 
   &:after {
     content: "";
