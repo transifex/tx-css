@@ -14,6 +14,7 @@ a {
   color: inherit;
 }
 
+b,
 strong {
 	font-weight: $t_fw_bold;
 }
@@ -26,4 +27,10 @@ h5,
 h6,
 p {
   font-weight: $t_fw_book;
+}
+
+code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 13px;
+  line-height: 1.5;
 }
