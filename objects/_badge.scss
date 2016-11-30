@@ -21,6 +21,10 @@
     background: #000;
   }
   
+  &--emerald {
+    background: $c_emerald;
+  }
+  
   &--small {
     font-size: 11px;
     padding-left: 9px;
