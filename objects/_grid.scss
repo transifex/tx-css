@@ -118,6 +118,7 @@
 .o-grid__cell {
   box-sizing: inherit;
   flex: 0 0 100%; /* 1 */
+  max-width: 100%;
 }
 
 /**
