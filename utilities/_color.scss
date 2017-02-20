@@ -42,6 +42,10 @@
   color: $c_primary !important;
 }
 
+.u-color-blueLight {
+  color: $c_blue_light !important;
+}
+
 
 /*
  * Background color
@@ -58,6 +62,11 @@
   background-color: $c_white !important;
 }
 
+.u-bgColor-whiteMedium {
+  background-color: $c_white_medium !important;
+}
+
+
  
 /*
  * Border color
@@ -67,6 +76,9 @@
 }
 .u-borderBottom-grayLight {
   border-bottom: 1px solid $c_gray_light !important;
+  &\@mdu {
+    @include bp(mdu) { border-bottom: 1px solid $c_gray_light !important; }
+  }
 }
 .u-borderTop-grayLight {
   border-top: 1px solid $c_gray_light !important;
