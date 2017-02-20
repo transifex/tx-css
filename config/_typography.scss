@@ -97,9 +97,18 @@ $t_text-xsmall : (
   md: 10px
 );
 
+$t_text-tiny : (
+  null: (11px, $t_lh_base),
+);
+
+
 $t_text-smaller : (
   null: (12px, 1.5),
   md: 12px
+);
+
+$t_text-13 : (
+  null: (13px, 1.5)
 );
 
 $t_text-small : (

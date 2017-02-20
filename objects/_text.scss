@@ -1,3 +1,13 @@
+.o-text-tiny,
+%o-text-tiny {
+  @include typi($t_text-tiny);
+};
+
+.o-text-13,
+%o-text-13 {
+  @include typi($t_text-13);
+};
+
 .o-text-xsmall,
 %o-text-xsmall {
   @include typi($t_text-xsmall);
