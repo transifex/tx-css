@@ -32,6 +32,10 @@
       display: none !important;
     }
     
+    .u-display-inlineBlock\@#{$name} {
+      display: inline-block !important;
+    }
+    
     .u-overflow-hidden\@#{$name} {
       overflow: hidden !important;
     }
