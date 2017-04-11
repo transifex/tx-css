@@ -62,5 +62,11 @@
     background-size: auto, 100%;
     background-position: center top, center center;
   }
+  
+  &--darkGradientMap {
+    background-image: url('../img/map-white-hero.png'), linear-gradient(-136deg, #16142F 0%, #23385A 100%);
+    background-size: auto, 100%;
+    background-position: center top, center center;
+  }
 
 }
