@@ -28,6 +28,11 @@
   @include typi($t_text-small);
 }
 
+.o-text-small-wide,
+%o-text-small-wide {
+  @include typi($t_text-small-wide);
+}
+
 .o-text-regular,
 %o-text-regular {
   @include typi($t_text-regular);

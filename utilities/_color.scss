@@ -70,6 +70,10 @@
   background-color: $c_white_medium !important;
 }
 
+.u-bgColor-whiteBlue {
+  background-color: $c_white_blue !important;
+}
+
 
  
 /*
@@ -89,6 +93,9 @@
 }
 .u-borderLeft-grayLight {
   border-left: 1px solid $c_gray_light !important;
+  &\@mdo {
+    @include bp(mdo) { border-left: 1px solid $c_gray_light !important; }
+  }
 }
 .u-borderRight-grayLight {
   border-right: 1px solid $c_gray_light !important;

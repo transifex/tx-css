@@ -116,6 +116,11 @@ $t_text-small : (
   md: 14px
 );
 
+$t_text-small-wide : (
+  null: (14px, 24px),
+  md: 14px
+);
+
 $t_text-regular : (
   null: (15px, 1.7),
   md: 16px

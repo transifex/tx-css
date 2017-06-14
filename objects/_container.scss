@@ -21,12 +21,10 @@
   &--half {
     box-sizing: border-box;
     
-    @include breakpoint($b_lg) {
-      width: $g_containerWidth-small/2;
-    }
+    // max-width: $g_containerWidth-small/2;
   
-    @include breakpoint($b_xl) {
-      width: $g_containerWidth/2;
+    @include breakpoint($b_md) {
+      max-width: $g_containerWidth/2;
     }
       
   }

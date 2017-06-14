@@ -8,6 +8,9 @@
 
 .u-width-half {
   width: 50% !important;
+  &\@smo {
+    @include bp(smo) { width: 50% !important; }
+  }
 }
 
 .u-width-full {
