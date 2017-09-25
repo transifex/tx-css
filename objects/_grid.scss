@@ -105,6 +105,22 @@
   padding: 0 ($g_gutterWidth/2);
 }
 
+.o-grid--gutter-x4 {
+  margin: 0 (-$baselineGrid*2);
+}
+
+.o-grid--gutter-x4 > .o-grid__cell {
+  padding: 0 ($baselineGrid*2);
+}
+
+.o-grid--gutter-x6 {
+  margin: 0 (-$baselineGrid*3);
+}
+
+.o-grid--gutter-x6 > .o-grid__cell {
+  padding: 0 ($baselineGrid*3);
+}
+
 /* o-grid cell
    ========================================================================== */
 
