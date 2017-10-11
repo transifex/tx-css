@@ -11,11 +11,11 @@
   }
   
   @include breakpoint($b_lg) {
-    width: $g_containerWidth-small + $g_gutterWidth;
+    max-width: $g_containerWidth-small + $g_gutterWidth;
   }
 
   @include breakpoint($b_xl) {
-    width: $g_containerWidth + $g_gutterWidth;
+    max-width: $g_containerWidth + $g_gutterWidth;
   }
   
   &--half {
